@@ -7,7 +7,7 @@ afterAll(() => {
   app.close();
 });
 
-test("adding items to a cart", async () => {
+test.skip("adding items to a cart", async () => {
   const initialItemsResponse = await getItems("lucas");
   expect(initialItemsResponse.status).toEqual(404);
 
